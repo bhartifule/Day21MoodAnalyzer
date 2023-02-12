@@ -8,20 +8,16 @@ import com.bridgelabz.moodAnalyzer.MoodAnalyzer;
 
 public class MoodAnalyzerTest {
 	
-	static MoodAnalyzer moodAnalyzer;
+	 static MoodAnalyzer moodAnalyzer;
 
-	@BeforeAll
-	static void init() {
-		System.out.println("Before All");
-		moodAnalyzer = new MoodAnalyzer();
-	}
+	    @Test
+	    public void testAnalyseMood(){
+	        moodAnalyzer = new moodAnalyzer("I am in Sad Mood");
+	        String result = moodAnalyzer.analyseMood();
+	        Assertions.assertEquals(result,"SAD");
 
-	@Test
-	public void testAnalyseMood() {
-		String result = moodAnalyzer.analyseMood("I am in Sad Mood");
-		Assertions.assertEquals(result, "SAD");
-
-		result = moodAnalyzer.analyseMood("In Happy mood");
-		Assertions.assertEquals(result, "HAPPY");
-	}
+	        moodAnalyzer = new moodAnalyzer("I am in Happy Mood");
+	        result = moodAnalyzer.analyseMood();
+	        Assertions.assertEquals(result,"HAPPY");
+	    }
 }
