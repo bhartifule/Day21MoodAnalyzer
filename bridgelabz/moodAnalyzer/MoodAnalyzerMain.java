@@ -2,7 +2,8 @@ package com.bridgelabz.moodAnalyzer;
 
 import java.util.Scanner;
 
-public class MoodAnalyzerMain {
+public class MoodAnalyzerMain 
+{
 	 public static void main(String[] args) {
 	        Scanner scan = new Scanner(System.in);
 
