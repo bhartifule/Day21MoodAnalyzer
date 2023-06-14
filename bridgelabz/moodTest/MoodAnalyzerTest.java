@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import com.bridgelabz.moodAnalyzer.MoodAnalyzer;
 
-public class MoodAnalyzerTest {
+public class MoodAnalyzerTest  {
 	
 	 static MoodAnalyzer moodAnalyzer;
 
